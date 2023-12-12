@@ -1,19 +1,22 @@
 # New fonts to `ElvUI`
 
-## Add the font files
+## Adding the font files
 
-* To the folder `\World of Warcraft\_retail_\Interface\AddOns\ElvUI\Core\Media\Fonts`  
+* Localize the folder `\World of Warcraft\_retail_\Interface\AddOns\ElvUI\Core\Media\Fonts` and add the font files to it.  
 
     > Sans-serif font suggestions: [San Francisco Bold](sanfrancisco-bold.ttf), [San Francisco Regular](sanfrancisco-regular.otf), [San Francisco Rounded](sanfrancisco-rounded.ttf)
 
-## Edit
+## Edits
 
-* The file `SharedMedia.lua` in the directory `\World of Warcraft\_retail_\Interface\AddOns\ElvUI\Core\Media` adding extra lines for every new font following this format:  
+* Edit the file `SharedMedia.lua` in the directory `\World of Warcraft\_retail_\Interface\AddOns\ElvUI\Core\Media` adding extra lines for every new font following this format:  
 
-    * `AddMedia('font','<fontfile-name>.<fontfile-format>', '<Descriptive Name>', nil, westAndRU)`
+    > `AddMedia('font','<fontfile-name>.<fontfile-format>', '<Descriptive Name>', nil, westAndRU)`
 
-    > Include the `westAndRU` flag if the font supports cyrillic characters  
-    > Keep the `nil` tag if the font does not need masks
+    after the default programmatic `AddMedia` font lines.  
+    Notes:
+
+  * Include the `westAndRU` flag if the font supports cyrillic characters.  
+  * Keep the `nil` tag if the font does not need a `Mask`.
 
     * Example:
 
@@ -25,4 +28,4 @@
 
 ## Restart the game
 
-* NOTE: Every time this addon updates will break this edit; make a backup somewhere and readd the fonts and the lines after updating `ElvUI`.
+> Every time this addon updates will break this edit; make a backup somewhere and readd the fonts and the lines after updating `ElvUI`.
