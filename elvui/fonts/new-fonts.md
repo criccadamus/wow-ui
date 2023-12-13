@@ -1,24 +1,31 @@
-# New fonts to `ElvUI`
+# Add new fonts to `ElvUI`
 
 ## Adding the font files
 
-* Localize the folder `\World of Warcraft\_retail_\Interface\AddOns\ElvUI\Core\Media\Fonts` and add the font files to it.  
+* Localize in your World of Warcraft addons folder the `ElvUI` one: `\World of Warcraft\_retail_\Interface\AddOns\ElvUI\Core\Media\Fonts` and add the font files to it.  
 
     > Sans-serif font suggestions: [San Francisco Bold](sanfrancisco-bold.ttf), [San Francisco Regular](sanfrancisco-regular.otf), [San Francisco Rounded](sanfrancisco-rounded.ttf)
 
-## Edits
+## File edits
 
-* Edit the file `SharedMedia.lua` in the directory `\World of Warcraft\_retail_\Interface\AddOns\ElvUI\Core\Media` adding extra lines for every new font following this format:  
+1. Edit the file `SharedMedia.lua` in the directory `\ElvUI\Core\Media`.  
 
-    > `AddMedia('font','<fontfile-name>.<fontfile-format>', '<Descriptive Name>', nil, westAndRU)`
+   * Every new font requires an new line that has to follow this structure:  
 
-    after the default programmatic `AddMedia` font lines.  
+      `AddMedia('font','<fontfile-name>.<fontfile-format>', '<Descriptive Name>', nil, westAndRU)`
+
+      * Where the `<fontfile-name>` is the name of the font file,
+      * `<fontfile-format>` is the format of the font file (like TrueType, OpenType...),
+      * `<Descriptive Name>` is the name the font will have inside the `ElvUI` dropdown select menus.
+
+    After the default `AddMedia` lines.  
     Notes:
 
-  * Include the `westAndRU` flag if the font supports cyrillic characters.  
-  * Keep the `nil` tag if the font does not need a `Mask`.
+     * Include the `westAndRU` flag if the font supports cyrillic characters.  
 
-    * Example:
+     * Keep the `nil` tag if the font does not need a `Mask`.
+
+    Example:
 
     ```lua
     AddMedia('font','sanfrancisco-bold.ttf',			'San Francisco Bold', nil, westAndRU)
@@ -28,4 +35,4 @@
 
 ## Restart the game
 
-> Every time this addon updates will break this edit; make a backup somewhere and readd the fonts and the lines after updating `ElvUI`.
+Every time `ElvUI` gets an update it will break this edit; make sure you have a backup somewhere and re-add the font files and the lines after updating it.
