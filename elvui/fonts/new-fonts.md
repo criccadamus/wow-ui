@@ -2,7 +2,7 @@
 
 ## Adding the font files
 
-* Localize in your World of Warcraft addons folder the `ElvUI` one: `\World of Warcraft\_retail_\Interface\AddOns\ElvUI\Core\Media\Fonts` and add the font files to it.  
+* Locate in your World of Warcraft addons folder the `ElvUI` one: `\World of Warcraft\_retail_\Interface\AddOns\ElvUI\Core\Media\Fonts` and add any font files to it.  
 
     > Sans-serif font suggestions: [San Francisco Bold](sanfrancisco-bold.ttf), [San Francisco Regular](sanfrancisco-regular.otf), [San Francisco Rounded](sanfrancisco-rounded.ttf)
 
@@ -33,6 +33,8 @@
     AddMedia('font','sanfrancisco-rounded.ttf',			'San Francisco Rounded', nil, westAndRU)
     ```
 
-## Restart the game
+## Save the file and restart the game
 
-Every time `ElvUI` gets an update it will break this edit; make sure you have a backup somewhere and re-add the font files and the lines after updating it.
+## Notes
+
+* Every time you update `ElvUI` you will have to do this again as the file you just edited has been replaced.  
