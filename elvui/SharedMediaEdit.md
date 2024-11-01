@@ -7,4 +7,6 @@ AddMedia('font','san_francisco-rounded.ttf',			'San Francisco Rounded', nil, wes
 
 AddMedia('font','geist_mono-bold.otf',			'Geist Mono Bold', nil, westAndRU)
 AddMedia('font','jetbrains_mono.bold.ttf',			'JetBrains Mono Bold', nil, westAndRU)
+AddMedia('font','DankMono-Regular.ttf',			'Dank Mono Regular', nil, westAndRU)
+AddMedia('font','DankMono-Italic.ttf',			'Dank Mono Italic', nil, westAndRU)
 ```
