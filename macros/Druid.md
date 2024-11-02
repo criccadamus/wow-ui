@@ -1,5 +1,7 @@
 # Druid macros
 
+## Restoration
+
 ```txt
 #showtooltip
 #showcooldown Adaptive Swarm

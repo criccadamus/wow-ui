@@ -8,7 +8,7 @@
 
 ```txt
 #showtooltip
-/cast [help] intervene; charge
+/cast [help] Intervene; Charge
 ```
 
 ```txt
