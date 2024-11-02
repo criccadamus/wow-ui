@@ -6,7 +6,8 @@ Wago fucked me up and lost half of my backups. Fuck you Wago.
 
 ### San Francisco font usage
 
-Apple's `San Francisco` font license does [not permit personal usage](https://en.wikipedia.org/wiki/San_Francisco_(sans-serif_typeface)#SF_Mono).
+Apple's `San Francisco` font license does [not permit personal usage](https://en.wikipedia.org/wiki/San_Francisco_(sans-serif_typeface)#SF_Mono).  
+This is important since some of the WeakAuras use it but is not provided here.
 
 >[!IMPORTANT]
 > You can import any profile or WeakAura without "installing" the font. It will work fine, but missing fonts will default to `Friz Quadrata TT`.  
