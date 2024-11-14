@@ -6,7 +6,7 @@ Wago fucked me up and lost half of my backups. Fuck you Wago.
 
 ### San Francisco font usage
 
-Apple's `San Francisco` font license does [not permit personal usage](https://en.wikipedia.org/wiki/San_Francisco_(sans-serif_typeface)#SF_Mono).  
+Apple's `San Francisco` font license does [not permit personal usage](https://en.wikipedia.org/wiki/San_Francisco_(sans-serif_typeface)).  
 This is important since some of the WeakAuras use it but is not provided here.
 
 >[!IMPORTANT]
